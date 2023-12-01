@@ -1,0 +1,122 @@
+*{
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+
+}
+
+nav{
+    background-color: orangered;
+height: 60px;
+z-index: 1000;
+}
+
+.dropdawn1 {
+    display: flex;
+    width: 100%;
+ 
+    height: 100%;
+
+    align-items: center;
+    z-index: 900;
+}
+.dropdawn1>li{
+flex: 1;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+
+padding-top: 10px;
+display: flex;
+text-align: center;
+position: relative;
+font-size: 1.1rem;
+font-weight: bold;
+font-variant: small-caps;
+text-transform: capitalize;
+color: rgb(165, 42, 106);
+    cursor: pointer;
+}
+.dropdawn1>li:hover {
+    background-color: blue;
+}
+
+
+.dropdawn2{
+
+position: absolute;
+background-color: blue;
+top: 30px;
+list-style: none;
+visibility: hidden;
+width: inherit;
+z-index: 700;
+
+}
+#hover1:hover .dropdawn2{
+    visibility: visible;
+}
+.dropdawn2>li {
+
+    position: relative;
+height: 50px;
+margin-top: 50px;
+
+
+}
+.dropdawn2>li:hover {
+    background-color: orangered;
+}
+
+
+
+ .dropdawn3{
+list-style: none;
+position: absolute;
+background-color: orange;
+left: 100%;
+top: 8px;
+visibility: hidden;
+
+
+ }  
+ #hover2:hover .dropdawn3{
+    visibility: visible;
+ }
+ 
+
+.dropdawn3>li{
+
+height: 50px;
+padding-top: 10px;
+
+}
+body{
+    height: 1000px;
+}
+
+
+
+section {
+background-image: url(assets/images/back.jpg);
+background-size: cover;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+color: wheat;
+font-size: 3rem;
+height: 100%;
+
+
+
+
+
+}
+
+
+
+
+
+
